@@ -1,48 +1,40 @@
 import java.util.Scanner;
-public class Methods
-{
-    public static void main (String[] args)
-    {
-        Scaner scan = new Scanner(System.in);
-        System.out.println("Please input a numbers");
-        double num1 = scan.nextDouble();
-        System.out.println("Please input another numbers");
-        double num2 = scan.nextDouble();
-        System.out.println("Please input another numbers");
-        double num3 = scan.nextDouble();
-        System.out.println("Please input another numbers");
-        double num4 = scan.nextDouble();
-        System.out.println("Please input another numbers");
-        double num5 = scan.nextDouble();
-        System.out.println("Please input another numbers");
-        double num6 = scan.nextDouble();
-        System.out.println("Please input another numbers");
-        double num7 = scan.nextDouble();
-        System.out.println("Please input another numbers");
-        double num8 = scan.nextDouble();
-        System.out.println("Please input another numbers");
-        double num9 = scan.nextDouble();
-        System.out.println("Please input another numbers");
-        double num10 = scan.nextDouble();
-        
-        double sum = (num1+num2+num3+num4+num5+num6+num7+num8+num9+num10);
-        
-    }
-    
-    public static double calcMean()
-    {
-        double mean = sum/+ 10;
-        return mean;
-    }
-    
-    public static double calcMedian()
-    {
-        double median
-        return median;
-    }
-    
-    public static void print()
-    {
-        
+
+public class Methods{
+	public static double mean(double x){
+		double tot = x/10;
+		return tot;
+	}
+	public static double median(double x, double y){
+		double med = (x+y)/2;
+		return med;
+	}
+	public static void print(double x, double y){
+		
+		System.out.println("The mean of the set is " + x + ", and the median is " + y + ".");
+	}
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter 10 numbers in ascending order.");
+		double first = scan.nextDouble();
+		double second = scan.nextDouble();
+		double third = scan.nextDouble();
+		double fourth = scan.nextDouble();
+		double fifth = scan.nextDouble();
+		double sixth = scan.nextDouble();
+		double seventh = scan.nextDouble();
+		double eighth = scan.nextDouble();
+		double ninth = scan.nextDouble();
+		double tenth = scan.nextDouble();
+		double total = (first+second+third+fourth+fifth+sixth+seventh+eighth+ninth+tenth);
+		double meanRes = mean(total);
+		double mediRes = median(fifth, sixth);
+		print(meanRes, mediRes);
     }
 }
+
+
+
+
+
+
